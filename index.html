@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- animate__animated-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- bootstrap@5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="overflow-x-hidden">
+        <header>
+            <div class="container">
+                <div
+                    class="d-flex align-items-lg-center align-items-start justify-content-between flex-column flex-lg-row position-relative">
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo.png" />
+                    </a>
+                    <nav class="nav-bar mx-auto mx-lg-0 d-none d-lg-block pt-4 pt-lg-0">
+                        <ul class="list-style-none d-flex align-items-center flex-column flex-lg-row ">
+                            <li class="py-3 py-lg-0">
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="py-3 py-lg-0">
+                                <a href="#">
+                                    ABOUT
+                                </a>
+                            </li>
+                            <li class="py-3 py-lg-0">
+                                <a href="#">
+                                    SERVICE
+                                </a>
+                            </li>
+                            <li class="py-3 py-lg-0">
+                                <a href="#">
+                                    PORTFOLIO
+                                </a>
+                            </li>
+                            <li class="py-3 py-lg-0">
+                                <a href="#">
+                                    BLOG
+                                </a>
+                            </li>
+                            <li class="py-3 py-lg-0">
+                                <a href="#">
+                                    CONTACT
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="d-lg-none position-absolute top-0 end-0">
+                        <a href="#" id="menu_icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" id="close_icons" class="d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- <div class="h_100"></div> -->
+        <!-- banner -->
+        <section class="banner my-auto position-relative">
+            <div id="carouselExampleRide" class="carousel slide d-none" data-bs-ride="true">
+                <div class="carousel-inner overlay h-100vh">
+                    <div class="carousel-item active">
+                        <div class="h-100vh bg-image-cover block-overlay"
+                            style="background-image: url(assets/images/img-1.jpg);"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="h-100vh bg-image-cover block-overlay"
+                            style="background-image: url(assets/images/img-2.jpg);"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="h-100vh bg-image-cover block-overlay"
+                            style="background-image: url(assets/images/img-1.jpg);"></div>
+                    </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+            <div id="carouselExampleControls" class="carousel slide slider-items-main" data-bs-ride="carousel">
+                <div class="carousel-inner overlay h-100vh">
+                    <div class="carousel-item active slider-items">
+                        <div class="h-100vh bg-image-cover block-overlay"
+                            style="background-image: url(assets/images/img-1.jpg);"></div>
+                    </div>
+                    <div class="carousel-item slider-items">
+                        <div class="h-100vh bg-image-cover block-overlay"
+                            style="background-image: url(assets/images/img-2.jpg);"></div>
+                    </div>
+                    <div class="carousel-item slider-items">
+                        <div class="h-100vh bg-image-cover block-overlay"
+                            style="background-image: url(assets/images/img-2.jpg);"></div>
+                    </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+            <div class="container">
+                <div class="banner-text">
+                    <h2 class="display-1 text-light fw-semibold">LET'S BEGIN
+                    </h2>
+                    <div class="fs-3 fw-semibold text-black py-2"><span class="iam"></span> <span class="text"></span>
+                    </div>
+                    <div class="">Make designed by as Begindot.</div>
+                    <a href="#" class="comman-button text-light mt-5">
+                        Button
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="h_100"></div>
+        <!-- information -->
+        <section class="information">
+            <div class="container">
+                <div class="row g-5 g-lg-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="comman-box-shadow p-20 rounded-3">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M229.66,58.34l-32-32a8,8,0,0,0-11.32,0l-96,96A8,8,0,0,0,88,128v32a8,8,0,0,0,8,8h32a8,8,0,0,0,5.66-2.34l96-96A8,8,0,0,0,229.66,58.34ZM124.69,152H104V131.31l64-64L188.69,88ZM200,76.69,179.31,56,192,43.31,212.69,64ZM224,120v88a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h88a8,8,0,0,1,0,16H48V208H208V120a8,8,0,0,1,16,0Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="fs-3 fw-semibold text-black py-2 text-truncate">Lorem Ipsum</div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries,</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="comman-box-shadow p-20 rounded-3">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M86.75,44.3,33.48,128l53.27,83.7a8,8,0,0,1-2.46,11.05A7.91,7.91,0,0,1,80,224a8,8,0,0,1-6.76-3.71l-56-88a8,8,0,0,1,0-8.59l56-88a8,8,0,1,1,13.5,8.59Zm152,79.41-56-88a8,8,0,1,0-13.5,8.59L222.52,128l-53.27,83.7a8,8,0,0,0,2.46,11.05A7.91,7.91,0,0,0,176,224a8,8,0,0,0,6.76-3.71l56-88A8,8,0,0,0,238.75,123.71Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="fs-3 fw-semibold text-black py-2 text-truncate">Lorem Ipsum</div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries,</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="comman-box-shadow p-20 rounded-3">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="fs-3 fw-semibold text-black py-2 text-truncate">Lorem Ipsum</div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="h_100"></div>
+        <!-- about-me -->
+        <section class="about-me bg-body-secondary">
+            <div class="h_100"></div>
+            <div class="container">
+                <div class="fw-semibold text-black py-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title wow animate__animated animate__zoomInDown mx-auto fs-3">ABOUT ME</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                        placeat unde
+                        non modi, facilis, quae?</p>
+                </div>
+                <div class="row g-5 g-lg-4">
+                    <div class="col-lg-6">
+                        <div class="w-100 h-100 position-relative">
+                            <img class="object-fit-cover h-100 wow animate__animated animate__zoomInLeft" src="assets/images/about-bg.jpg" />
+                            <div class="icons-part position-absolute start-0 end-0 bottom-0">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="h30w30 comman-action-icon ">
+                                        <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                            fill="#ffffff" viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                            fill="#ffffff" viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                            </path>
+                                        </svg>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="h30w30 comman-action-icon">
+                                        <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                            fill="#ffffff" viewBox="0 0 256 256">
+                                            <path
+                                                d="M245.66,77.66l-29.9,29.9C209.72,177.58,150.67,232,80,232c-14.52,0-26.49-2.3-35.58-6.84-7.33-3.67-10.33-7.6-11.08-8.72a8,8,0,0,1,3.85-11.93c.26-.1,24.24-9.31,39.47-26.84a110.93,110.93,0,0,1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8,8,0,0,1,13.65-4.92c.35.35,33.28,33.1,73.54,43.72V88a47.87,47.87,0,0,1,14.36-34.3A46.87,46.87,0,0,1,168.1,40a48.66,48.66,0,0,1,41.47,24H240a8,8,0,0,1,5.66,13.66Z">
+                                            </path>
+                                        </svg>
+                                        </div>
+                                        <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                        fill="#ffffff" viewBox="0 0 256 256">
+                                        <path
+                                            d="M245.66,77.66l-29.9,29.9C209.72,177.58,150.67,232,80,232c-14.52,0-26.49-2.3-35.58-6.84-7.33-3.67-10.33-7.6-11.08-8.72a8,8,0,0,1,3.85-11.93c.26-.1,24.24-9.31,39.47-26.84a110.93,110.93,0,0,1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8,8,0,0,1,13.65-4.92c.35.35,33.28,33.1,73.54,43.72V88a47.87,47.87,0,0,1,14.36-34.3A46.87,46.87,0,0,1,168.1,40a48.66,48.66,0,0,1,41.47,24H240a8,8,0,0,1,5.66,13.66Z">
+                                        </path>
+                                    </svg>
+                                    </div>
+                                    </a>
+                                    <a href="#" class="h30w30 comman-action-icon">
+                                        <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                            fill="#ffffff" viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                            </path>
+                                        </svg>
+                                        </div>
+                                        <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                            fill="#ffffff" viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                            </path>
+                                        </svg>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="h30w30 comman-action-icon">
+                                        <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                            fill="#ffffff" viewBox="0 0 256 256">
+                                            <path
+                                                d="M216,112c0,22.57-7.9,43.2-22.23,58.11C180.39,184,162.25,192,144,192c-17.88,0-29.82-5.86-37.43-12L95.79,225.83A8,8,0,0,1,88,232a8.24,8.24,0,0,1-1.84-.21,8,8,0,0,1-6-9.62l32-136a8,8,0,0,1,15.58,3.66l-16.9,71.8C114,166,123.3,176,144,176c27.53,0,56-23.94,56-64A72,72,0,1,0,65.63,148a8,8,0,0,1-13.85,8A88,88,0,1,1,216,112Z">
+                                            </path>
+                                        </svg>
+                                        </div>
+                                        <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                            fill="#ffffff" viewBox="0 0 256 256">
+                                            <path
+                                                d="M216,112c0,22.57-7.9,43.2-22.23,58.11C180.39,184,162.25,192,144,192c-17.88,0-29.82-5.86-37.43-12L95.79,225.83A8,8,0,0,1,88,232a8.24,8.24,0,0,1-1.84-.21,8,8,0,0,1-6-9.62l32-136a8,8,0,0,1,15.58,3.66l-16.9,71.8C114,166,123.3,176,144,176c27.53,0,56-23.94,56-64A72,72,0,1,0,65.63,148a8,8,0,0,1-13.85,8A88,88,0,1,1,216,112Z">
+                                            </path>
+                                        </svg>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="h30w30 comman-action-icon">
+                                        <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                            fill="#ffffff" viewBox="0 0 256 256">
+                                            <path
+                                                d="M234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-72.11,61.81-48,32A4,4,0,0,1,108,160V96a4,4,0,0,1,6.22-3.33l48,32a4,4,0,0,1,0,6.66Z">
+                                            </path>
+                                        </svg>
+                                        </div>
+                                        <div class="h30w30 d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="action-icon m-auto"
+                                            fill="#ffffff" viewBox="0 0 256 256">
+                                            <path
+                                                d="M234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-72.11,61.81-48,32A4,4,0,0,1,108,160V96a4,4,0,0,1,6.22-3.33l48,32a4,4,0,0,1,0,6.66Z">
+                                            </path>
+                                        </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="fs-3 fw-semibold text-black">Hello, I am <span class="color-yellow">AL Mamun</span>
+                        </div>
+                        <div class="fs-5 text-black py-2">Graphic Designer and Web Designer</div>
+                        <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis numquam ipsam
+                            ut deleniti perferendis aliquid ullam, voluptatibus nam sunt eum laudantium cupiditate iste,
+                            obcaecati deserunt dolores aliquam quia cum minus animi ipsa est facere culpa fugiat, maxime
+                            quam! Itaque aperiam sequi accusantium impedit recusandae nobis quod sunt deserunt provident
+                            omnis.
+                        </p>
+                        <div class="fs-5 text-black fw-semibold py-4">MY SKILLS</div>
+                        <div class="progress d-flex flex-column my-3">
+                            <div
+                                class="progress-lable z-1 position-absolute start-0 top-0 d-flex align-items-center p-2">
+                                HTML5</div>
+                            <div class="progress-bar" style="width: 100%"></div>
+                            <div class="end-0 position-absolute top-50 translate-middle">100%</div>
+                        </div>
+                        <div class="progress d-flex flex-column my-3">
+                            <div
+                                class="progress-lable z-1 position-absolute start-0 top-0 d-flex align-items-center p-2">
+                                CSS3</div>
+                            <div class="progress-bar" style="width: 80%"></div>
+                            <div class="end-0 position-absolute top-50 translate-middle">80%</div>
+                        </div>
+                        <div class="progress d-flex flex-column my-3">
+                            <div
+                                class="progress-lable z-1 position-absolute start-0 top-0 d-flex align-items-center p-2">
+                                JS</div>
+                            <div class="progress-bar" style="width: 60%"></div>
+                            <div class="end-0 position-absolute top-50 translate-middle">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_100"></div>
+        </section>
+        <!-- fact-section -->
+        <section class="fact-section bg-image-cover bg-image-position-center p-5 z-1"
+            style="background-image: url(assets/images/fan-fact-bg.jpg);">
+            <div class="container">
+                <div class="row p-5 g-5 g-lg-4">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="border h-100 w-100 p-3 text-white text-center">
+                            <div class="fs-3 fw-semibold pb-3"><span class="pb-3 border-bottom">600 +</span></div>
+                            <p class="mt-3">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="border h-100 w-100 p-3 text-white text-center">
+                            <div class="fs-3 fw-semibold pb-3"><span class="pb-3 border-bottom">600 +</span></div>
+                            <p class="mt-3">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="border h-100 w-100 p-3 text-white text-center">
+                            <div class="fs-3 fw-semibold pb-3"><span class="pb-3 border-bottom">600 +</span></div>
+                            <p class="mt-3">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="border h-100 w-100 p-3 text-white text-center">
+                            <div class="fs-3 fw-semibold pb-3"><span class="pb-3 border-bottom">600 +</span></div>
+                            <p class="mt-3">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service-section -->
+        <section class="service-section bg-body-secondary z-0">
+            <div class="h_100"></div>
+            <div class="container-lg">
+                <div class="fw-semibold text-black py-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title2 wow animate__animated animate__zoomInDown mx-auto fs-3">SERVICE</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+                        placeat unde
+                        non modi, facilis, quae?</p>
+                </div>
+                <div class="row g-5 g-lg-4">
+                    <div class="col-md-4">
+                        <div class="border-yellow bg-white p-20 rounded-3">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M229.66,58.34l-32-32a8,8,0,0,0-11.32,0l-96,96A8,8,0,0,0,88,128v32a8,8,0,0,0,8,8h32a8,8,0,0,0,5.66-2.34l96-96A8,8,0,0,0,229.66,58.34ZM124.69,152H104V131.31l64-64L188.69,88ZM200,76.69,179.31,56,192,43.31,212.69,64ZM224,120v88a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h88a8,8,0,0,1,0,16H48V208H208V120a8,8,0,0,1,16,0Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="fs-3 fw-semibold text-black py-2 text-truncate">Lorem Ipsum</div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries,</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="border-yellow bg-white p-20 rounded-3">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M86.75,44.3,33.48,128l53.27,83.7a8,8,0,0,1-2.46,11.05A7.91,7.91,0,0,1,80,224a8,8,0,0,1-6.76-3.71l-56-88a8,8,0,0,1,0-8.59l56-88a8,8,0,1,1,13.5,8.59Zm152,79.41-56-88a8,8,0,1,0-13.5,8.59L222.52,128l-53.27,83.7a8,8,0,0,0,2.46,11.05A7.91,7.91,0,0,0,176,224a8,8,0,0,0,6.76-3.71l56-88A8,8,0,0,0,238.75,123.71Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="fs-3 fw-semibold text-black py-2 text-truncate">Lorem Ipsum</div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries,</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="border-yellow bg-white p-20 rounded-3">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                        viewBox="0 0 256 256">
+                                        <path
+                                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <div class="fs-3 fw-semibold text-black py-2 text-truncate">Lorem Ipsum</div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_100"></div>
+        </section>
+        <div class="h_100"></div>
+        <!-- why-choose-section -->
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="fw-semibold text-black py-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title wow animate__animated animate__zoomInDown mx-auto fs-3">WHY CHOOSE ME</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <div class="d-flex">
+                            <a href="#" class="bg-body-secondary rounded-circle h60w60 d-flex">
+                                <div class=" wow animate__animated animate__flipOutX d-flex justify-content-center align-items-center w-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                    viewBox="0 0 256 256" class="m-auto">
+                                    <path
+                                        d="M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm88-24a8,8,0,0,0-8,8V82c-6.35-7.36-12.83-14.45-20.12-21.83a96,96,0,1,0-2,137.7,8,8,0,0,0-11-11.64A80,80,0,1,1,184.54,71.4C192.68,79.64,199.81,87.58,207,96H184a8,8,0,0,0,0,16h40a8,8,0,0,0,8-8V64A8,8,0,0,0,224,56Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            </a>
+                            <div class="flex-auto-width ms-3">
+                                <div class="fs-4 fw-semibold text-black">Completed on right time</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta
+                                    voluptate, quod dolore facilis iusto eligendi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex">
+                            <a href="#" class="bg-body-secondary rounded-circle h60w60 d-flex">
+                                <div class=" wow animate__animated animate__flipOutX d-flex justify-content-center align-items-center w-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                    viewBox="0 0 256 256" class="m-auto">
+                                    <path
+                                        d="M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm88-24a8,8,0,0,0-8,8V82c-6.35-7.36-12.83-14.45-20.12-21.83a96,96,0,1,0-2,137.7,8,8,0,0,0-11-11.64A80,80,0,1,1,184.54,71.4C192.68,79.64,199.81,87.58,207,96H184a8,8,0,0,0,0,16h40a8,8,0,0,0,8-8V64A8,8,0,0,0,224,56Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            </a>
+                            <div class="flex-auto-width ms-3">
+                                <div class="fs-4 fw-semibold text-black">Completed on right time</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta
+                                    voluptate, quod dolore facilis iusto eligendi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex">
+                            <a href="#" class="bg-body-secondary rounded-circle h60w60 d-flex">
+                                <div class=" wow animate__animated animate__flipOutX d-flex justify-content-center align-items-center w-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                    viewBox="0 0 256 256" class="m-auto">
+                                    <path
+                                        d="M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm88-24a8,8,0,0,0-8,8V82c-6.35-7.36-12.83-14.45-20.12-21.83a96,96,0,1,0-2,137.7,8,8,0,0,0-11-11.64A80,80,0,1,1,184.54,71.4C192.68,79.64,199.81,87.58,207,96H184a8,8,0,0,0,0,16h40a8,8,0,0,0,8-8V64A8,8,0,0,0,224,56Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            </a>
+                            <div class="flex-auto-width ms-3">
+                                <div class="fs-4 fw-semibold text-black">Completed on right time</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta
+                                    voluptate, quod dolore facilis iusto eligendi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex">
+                            <a href="#" class="bg-body-secondary rounded-circle h60w60 d-flex">
+                                <div class=" wow animate__animated animate__flipOutX d-flex justify-content-center align-items-center w-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                    viewBox="0 0 256 256" class="m-auto">
+                                    <path
+                                        d="M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm88-24a8,8,0,0,0-8,8V82c-6.35-7.36-12.83-14.45-20.12-21.83a96,96,0,1,0-2,137.7,8,8,0,0,0-11-11.64A80,80,0,1,1,184.54,71.4C192.68,79.64,199.81,87.58,207,96H184a8,8,0,0,0,0,16h40a8,8,0,0,0,8-8V64A8,8,0,0,0,224,56Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            </a>
+                            <div class="flex-auto-width ms-3">
+                                <div class="fs-4 fw-semibold text-black">Completed on right time</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta
+                                    voluptate, quod dolore facilis iusto eligendi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex">
+                            <a href="#" class="bg-body-secondary rounded-circle h60w60 d-flex">
+                                <div class=" wow animate__animated animate__flipOutX d-flex justify-content-center align-items-center w-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                    viewBox="0 0 256 256" class="m-auto">
+                                    <path
+                                        d="M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm88-24a8,8,0,0,0-8,8V82c-6.35-7.36-12.83-14.45-20.12-21.83a96,96,0,1,0-2,137.7,8,8,0,0,0-11-11.64A80,80,0,1,1,184.54,71.4C192.68,79.64,199.81,87.58,207,96H184a8,8,0,0,0,0,16h40a8,8,0,0,0,8-8V64A8,8,0,0,0,224,56Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            </a>
+                            <div class="flex-auto-width ms-3">
+                                <div class="fs-4 fw-semibold text-black">Completed on right time</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta
+                                    voluptate, quod dolore facilis iusto eligendi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex">
+                            <a href="#" class="bg-body-secondary rounded-circle h60w60 d-flex">
+                                <div class=" wow animate__animated animate__flipOutX d-flex justify-content-center align-items-center w-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+                                    viewBox="0 0 256 256" class="m-auto">
+                                    <path
+                                        d="M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm88-24a8,8,0,0,0-8,8V82c-6.35-7.36-12.83-14.45-20.12-21.83a96,96,0,1,0-2,137.7,8,8,0,0,0-11-11.64A80,80,0,1,1,184.54,71.4C192.68,79.64,199.81,87.58,207,96H184a8,8,0,0,0,0,16h40a8,8,0,0,0,8-8V64A8,8,0,0,0,224,56Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            </a>
+                            <div class="flex-auto-width ms-3">
+                                <div class="fs-4 fw-semibold text-black">Completed on right time</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta
+                                    voluptate, quod dolore facilis iusto eligendi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="h_100"></div>
+        <!-- recent-work-section -->
+        <section class="recent-work-section bg-body-secondary">
+            <div class="h_100"></div>
+            <div class="container">
+                <div class="fw-semibold text-black py-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title wow animate__animated animate__zoomInDown mx-auto fs-3">RECENT WORK</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="d-flex w-100 text-nowrap overflow-auto pb-3">
+                    <div class="mx-auto">
+                        <button type="button" class="btn btn-outline-warning me-3 rounded-0">ALL</button>
+                        <button type="button" class="btn btn-outline-warning me-3 rounded-0">Web Design</button>
+                        <button type="button" class="btn btn-outline-warning me-3 rounded-0">Graphic</button>
+                        <button type="button" class="btn btn-outline-warning me-3 rounded-0">Logo</button>
+                        <button type="button" class="btn btn-outline-warning me-3 rounded-0">Wordpress</button>
+                        <button type="button" class="btn btn-outline-warning me-3 rounded-0">Other</button>
+                    </div>
+                </div>
+                <div class="row g-5 g-lg-4 mt-4">
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="w-100 h_250 position-relative comman-box-shadow rounded-3 overflow-hidden after-shadow">
+                            <img class="object-fit-cover h-100 w-100" src="assets/images/img-3.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="w-100 h_250 position-relative comman-box-shadow rounded-3 overflow-hidden after-shadow">
+                            <img class="object-fit-cover h-100 w-100" src="assets/images/img-4.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="w-100 h_250 position-relative comman-box-shadow rounded-3 overflow-hidden after-shadow">
+                            <img class="object-fit-cover h-100 w-100" src="assets/images/img-5.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="w-100 h_250 position-relative comman-box-shadow rounded-3 overflow-hidden after-shadow">
+                            <img class="object-fit-cover h-100 w-100" src="assets/images/img-6.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="w-100 h_250 position-relative comman-box-shadow rounded-3 overflow-hidden after-shadow">
+                            <img class="object-fit-cover h-100 w-100" src="assets/images/img-7.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="w-100 h_250 position-relative comman-box-shadow rounded-3 overflow-hidden after-shadow">
+                            <img class="object-fit-cover h-100 w-100" src="assets/images/img-8.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="w-100 h_250 position-relative comman-box-shadow rounded-3 overflow-hidden after-shadow">
+                            <img class="object-fit-cover h-100 w-100" src="assets/images/img-9.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="w-100 h_250 position-relative comman-box-shadow rounded-3 overflow-hidden after-shadow">
+                            <img class="object-fit-cover h-100 w-100" src="assets/images/img-10.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <a href="#" class="w-100 h_250 position-relative comman-box-shadow rounded-3 overflow-hidden after-shadow">
+                            <img class="object-fit-cover h-100 w-100" src="assets/images/img-11.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="h_100"></div>
+        </section>
+        <!-- frequently-section -->
+        <section class="frequently-section bg-color-yellow">
+            <div class="h_100"></div>
+            <div class="container">
+                <div class="fw-semibold text-black py-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title2 wow animate__animated animate__zoomInDown mx-auto fs-3">FREQUENTLY ASKED QUESTIONS</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="row g-5 g-lg-4">
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 position-relative">
+                            <img class="object-fit-cover h-100 animate__animated animate__zoomInLeft" src="assets/images/faq.jpeg" />
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Accordion Item #1
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>This is the first item's accordion body. It is shown by default, until the
+                                            collapse plugin adds the appropriate classes that we use to style each
+                                            element. These classes control the overall appearance, as well as the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth noting that
+                                            just about any HTML can go within the though the transition does limit
+                                            overflow.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Accordion Item #2
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>This is the first item's accordion body. It is shown by default, until the
+                                            collapse plugin adds the appropriate classes that we use to style each
+                                            element. These classes control the overall appearance, as well as the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth noting that
+                                            just about any HTML can go within the though the transition does limit
+                                            overflow.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Accordion Item #3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>This is the first item's accordion body. It is shown by default, until the
+                                            collapse plugin adds the appropriate classes that we use to style each
+                                            element. These classes control the overall appearance, as well as the
+                                            showing and hiding via CSS transitions. You can modify any of this with
+                                            custom CSS or overriding our default variables. It's also worth noting that
+                                            just about any HTML can go within the though the transition does limit
+                                            overflow.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_100"></div>
+        </section>
+        <!-- blog-area -->
+        <section class="blog-area bg-body-secondary">
+            <div class="h_100"></div>
+            <div class="container">
+                <div class="fw-semibold text-black py-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title wow animate__animated animate__zoomInDown mx-auto fs-3">BLOG AREA</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="row g-5 g-lg-4 mt-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="bg-white comman-box-shadow overflow-hidden p-3">
+                            <div class="w-100 h_180 position-relative comman-box-shadow">
+                                <img class="object-fit-cover h-100 w-100" src="assets/images/img-13.jpg" />
+                            </div>
+                            <div class="pt-2">
+                                <div class="fs-5 fw-semibold text-black py-2">Full Responsive</div>
+                                <small class="pb-2 opacity-50">AL Mamun, 22 FEB 2018</small>
+                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+                                    similique velit, officiis non.</p>
+                                <button type="button" class="btn btn-outline-warning mt-3 rounded-0 text-uppercase">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="bg-white comman-box-shadow overflow-hidden p-3">
+                            <div class="w-100 h_180 position-relative comman-box-shadow">
+                                <img class="object-fit-cover h-100 w-100" src="assets/images/img-14.jpg" />
+                            </div>
+                            <div class="pt-2">
+                                <div class="fs-5 fw-semibold text-black py-2">Full Responsive</div>
+                                <small class="pb-2 opacity-50">AL Mamun, 22 FEB 2018</small>
+                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+                                    similique velit, officiis non.</p>
+                                <button type="button" class="btn btn-outline-warning mt-3 rounded-0 text-uppercase">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="bg-white comman-box-shadow overflow-hidden p-3">
+                            <div class="w-100 h_180 position-relative comman-box-shadow">
+                                <img class="object-fit-cover h-100 w-100" src="assets/images/img-12.jpg" />
+                            </div>
+                            <div class="pt-2">
+                                <div class="fs-5 fw-semibold text-black py-2">Full Responsive</div>
+                                <small class="pb-2 opacity-50">AL Mamun, 22 FEB 2018</small>
+                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+                                    similique velit, officiis non.</p>
+                                <button type="button" class="btn btn-outline-warning mt-3 rounded-0 text-uppercase">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="bg-white comman-box-shadow overflow-hidden p-3">
+                            <div class="w-100 h_180 position-relative comman-box-shadow">
+                                <img class="object-fit-cover h-100 w-100" src="assets/images/img-10.jpg" />
+                            </div>
+                            <div class="pt-2">
+                                <div class="fs-5 fw-semibold text-black py-2">Full Responsive</div>
+                                <small class="pb-2 opacity-50">AL Mamun, 22 FEB 2018</small>
+                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+                                    similique velit, officiis non.</p>
+                                <button type="button" class="btn btn-outline-warning mt-3 rounded-0 text-uppercase">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_100"></div>
+        </section>
+        <!-- testimonial-section -->
+        <section class="testimonial-section bg-color-yellow">
+            <div class="h_100 d-none d-sm-block"></div>
+            <div class="container bg-white">
+                <div class="fw-semibold text-black py-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title wow animate__animated animate__zoomInDown mx-auto fs-3">TESTIMONIAL</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="swiper mySwiper m-auto">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide  text-center">
+                            <a href="#" class="py-2 mb-3">
+                                <img class="h30w30" src="assets/images/inverted-commas-svgrepo-com.svg" />
+                            </a>
+                            <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nam
+                                suscipit similique quod eaque adipisci modi recusandae nesciunt veniam, ut, rem eligendi
+                                minima et, accusantium?</p>
+                            <div class="fs-5 fw-semibold text-black pt-3">Aseven M </div>
+                            <small class="pb-2 opacity-50">CEO - aseven.info</small>
+                        </div>
+                        <div class="swiper-slide  text-center">
+                            <a href="#" class="py-2 mb-3">
+                                <img class="h30w30" src="assets/images/inverted-commas-svgrepo-com.svg" />
+                            </a>
+                            <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nam
+                                suscipit similique quod eaque adipisci modi recusandae nesciunt veniam, ut, rem eligendi
+                                minima et, accusantium?</p>
+                            <div class="fs-5 fw-semibold text-black pt-3">Aseven M </div>
+                            <small class="pb-2 opacity-50">CEO - aseven.info</small>
+                        </div>
+                        <div class="swiper-slide  text-center">
+                            <a href="#" class="py-2 mb-3">
+                                <img class="h30w30" src="assets/images/inverted-commas-svgrepo-com.svg" />
+                            </a>
+                            <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nam
+                                suscipit similique quod eaque adipisci modi recusandae nesciunt veniam, ut, rem eligendi
+                                minima et, accusantium?</p>
+                            <div class="fs-5 fw-semibold text-black pt-3">Aseven M </div>
+                            <small class="pb-2 opacity-50">CEO - aseven.info</small>
+                        </div>
+                        <div class="swiper-slide  text-center">
+                            <a href="#" class="py-2 mb-3">
+                                <img class="h30w30" src="assets/images/inverted-commas-svgrepo-com.svg" />
+                            </a>
+                            <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nam
+                                suscipit similique quod eaque adipisci modi recusandae nesciunt veniam, ut, rem eligendi
+                                minima et, accusantium?</p>
+                            <div class="fs-5 fw-semibold text-black pt-3">Aseven M </div>
+                            <small class="pb-2 opacity-50">CEO - aseven.info</small>
+                        </div>
+                        <div class="swiper-slide  text-center">
+                            <a href="#" class="py-2 mb-3">
+                                <img class="h30w30" src="assets/images/inverted-commas-svgrepo-com.svg" />
+                            </a>
+                            <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nam
+                                suscipit similique quod eaque adipisci modi recusandae nesciunt veniam, ut, rem eligendi
+                                minima et, accusantium?</p>
+                            <div class="fs-5 fw-semibold text-black pt-3">Aseven M </div>
+                            <small class="pb-2 opacity-50">CEO - aseven.info</small>
+                        </div>
+                        <div class="swiper-slide  text-center">
+                            <a href="#" class="py-2 mb-3">
+                                <img class="h30w30" src="assets/images/inverted-commas-svgrepo-com.svg" />
+                            </a>
+                            <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nam
+                                suscipit similique quod eaque adipisci modi recusandae nesciunt veniam, ut, rem eligendi
+                                minima et, accusantium?</p>
+                            <div class="fs-5 fw-semibold text-black pt-3">Aseven M </div>
+                            <small class="pb-2 opacity-50">CEO - aseven.info</small>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="h_100 d-none d-sm-block"></div>
+        </section>
+        <div class="h_100"></div>
+        <!-- team-section -->
+        <section class="team-section">
+            <div class="container bg-white">
+                <div class="fw-semibold text-black py-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title wow animate__animated animate__zoomInDown mx-auto fs-3">TEAM</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="row g-5 g-lg-4 mt-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="bg-white overflow-hidden comman-box-shadow rounded-3">
+                            <div class="w-100 h_300 position-relative">
+                                <img class="object-fit-cover h-100 w-100" src="assets/images/img-15.jpg" />
+                            </div>
+                            <div class="p-3 text-center border-bottom-8 border-color-yellow">
+                                <div class="fs-5 fw-semibold text-black pb-2">AL MAMUN</div>
+                                <small class="pb-2 opacity-50">CEO FOUNDER</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="bg-white overflow-hidden comman-box-shadow rounded-3">
+                            <div class="w-100 h_300 position-relative">
+                                <img class="object-fit-cover h-100 w-100" src="assets/images/img-16.jpg" />
+                            </div>
+                            <div class="p-3 text-center border-bottom-8 border-color-yellow">
+                                <div class="fs-5 fw-semibold text-black pb-2">AL MAMUN</div>
+                                <small class="pb-2 opacity-50">CEO FOUNDER</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="bg-white overflow-hidden comman-box-shadow rounded-3">
+                            <div class="w-100 h_300 position-relative">
+                                <img class="object-fit-cover h-100 w-100" src="assets/images/img-17.jpg" />
+                            </div>
+                            <div class="p-3 text-center border-bottom-8 border-color-yellow">
+                                <div class="fs-5 fw-semibold text-black pb-2">AL MAMUN</div>
+                                <small class="pb-2 opacity-50">CEO FOUNDER</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="bg-white overflow-hidden comman-box-shadow rounded-3">
+                            <div class="w-100 h_300 position-relative">
+                                <img class="object-fit-cover h-100 w-100" src="assets/images/img-18.jpg" />
+                            </div>
+                            <div class="p-3 text-center border-bottom-8 border-color-yellow">
+                                <div class="fs-5 fw-semibold text-black pb-2">AL MAMUN</div>
+                                <small class="pb-2 opacity-50">CEO FOUNDER</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_100"></div>
+        </section>
+        <!-- Readmore-section -->
+        <section class="Readmore-section bg-color-yellow">
+            <div class="h_100"></div>
+            <div class="container">
+                <div class="fw-semibold text-black py-2 d-flex flex-column">
+                    <h2 class="fs-3 pb-2">Lorem ipsum dolor sit amet</h2>
+                    <div class="row align-items-center">
+                        <p class="fw-lighter col-sm-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                            fugit
+                            optio voluptatem modi, nemo, cupiditate vel, aspernatur, quae consequatur officia unde
+                            totam.</p>
+                        <div class="col-sm-3 d-flex">
+                            <button type="button"
+                                class="btn yellow-btn text-nowrap ms-md-auto btn-outline-warning mt-3 rounded-0 text-uppercase">Read
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_100"></div>
+        </section>
+        <!-- pricing-area -->
+        <div class="h_100"></div>
+        <section class="pricing-area">
+            <div class="container bg-white">
+                <div class="fw-semibold text-black pb-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title wow animate__animated animate__zoomInDown mx-auto fs-3">PRICING AREA</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+                <div class="row g-5 g-lg-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="bg-white overflow-hidden comman-box-shadow rounded-3">
+                            <h2 class="mx-auto fs-3 text-center p-3">BASIC</h2>
+                            <h5
+                                class="bg-color-yellow p-3 text-center d-flex text-center justify-content-center align-items-center">
+                                $99/<span class="fw-semibold text-center f-15">PER MONTH</span>
+                            </h5>
+                            <ul>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Basic Feature
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Best Output
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Free Update
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Live chat
+                                </li>
+                            </ul>
+                            <div class="py-3 text-center">
+                                <button type="button"
+                                    class="btn bgtn-outline-warnin black-btn rounded-0 text-uppercase">PURCHASE
+                                    NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="bg-white overflow-hidden comman-box-shadow rounded-3">
+                            <h2 class="mx-auto fs-3 text-center p-3">BASIC</h2>
+                            <h5
+                                class="bg-color-yellow p-3 text-center d-flex text-center justify-content-center align-items-center">
+                                $99/<span class="fw-semibold text-center f-15">PER MONTH</span>
+                            </h5>
+                            <ul>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Basic Feature
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Best Output
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Free Update
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Live chat
+                                </li>
+                            </ul>
+                            <div class="py-3 text-center">
+                                <button type="button"
+                                    class="btn bgtn-outline-warnin black-btn rounded-0 text-uppercase">PURCHASE
+                                    NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="bg-white overflow-hidden comman-box-shadow rounded-3">
+                            <h2 class="mx-auto fs-3 text-center p-3">BASIC</h2>
+                            <h5
+                                class="bg-color-yellow p-3 text-center d-flex text-center justify-content-center align-items-center">
+                                $99/<span class="fw-semibold text-center f-15">PER MONTH</span>
+                            </h5>
+                            <ul>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Basic Feature
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Best Output
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Free Update
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Live chat
+                                </li>
+                            </ul>
+                            <div class="py-3 text-center">
+                                <button type="button"
+                                    class="btn bgtn-outline-warnin black-btn rounded-0 text-uppercase">PURCHASE
+                                    NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="bg-white overflow-hidden comman-box-shadow rounded-3">
+                            <h2 class="mx-auto fs-3 text-center p-3">BASIC</h2>
+                            <h5
+                                class="bg-color-yellow p-3 text-center d-flex text-center justify-content-center align-items-center">
+                                $99/<span class="fw-semibold text-center f-15">PER MONTH</span>
+                            </h5>
+                            <ul>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Basic Feature
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Best Output
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Free Update
+                                </li>
+                                <li class="f-15 p-3 border-bottom text-center">
+                                    Live chat
+                                </li>
+                            </ul>
+                            <div class="py-3 text-center">
+                                <button type="button"
+                                    class="btn bgtn-outline-warnin black-btn rounded-0 text-uppercase">PURCHASE
+                                    NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_100"></div>
+        </section>
+        <!-- pricing-area -->
+        <div class="h_100"></div>
+        <section class="pricing-area">
+            <div class="bg-white">
+                <div class="fw-semibold text-black pb-2 text-center d-flex flex-column mb-5">
+                    <h2 class="section-title wow animate__animated animate__zoomInDown mx-auto fs-3">CONTACT ME</h2>
+                    <p class="px-5 mx-auto col-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="container d-flex">
+                    <div class="row bg-white bg-white comman-box-shadow rounded-3 col-sm-12 col-md-9 mx-auto p-2 p-md-3 p-lg-5">
+                        <div class="col-lg-6 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                            <input type="email" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Massge</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_100"></div>
+            <footer class="bg-black p-4 text-center border-bottom-8 border-color-yellow">
+                <a href="#" class="p-2 text-decoration-none text-white text-center">
+                    © 2018 A Template Designed by Begindot
+                </a>
+            </footer>
+        </section>
+    </main>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- typing animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var typing = new Typed(".text", {
+            strings: ["", "React Development", "Freelancer", "Graphics Designer", "Web Designer", "Web Developer"],
+            typeSpeed: 100,
+            backSpeed: 40,
+            loop: true,
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#menu_icons").click(function () {
+                $("#close_icons").removeClass("d-none");
+                $("#menu_icons").addClass("d-none");
+                $("header").addClass("show");
+                $(".nav-bar").removeClass("d-none");
+            });
+            $("#close_icons").click(function () {
+                $("#close_icons").addClass("d-none");
+                $("#menu_icons").removeClass("d-none");
+                $("header").removeClass("show");
+                $(".nav-bar").addClass("d-none");
+            });
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('header').addClass('bg-black');
+            } else {
+                $('header').removeClass('bg-black');
+            }
+        });
+    </script>
+</body>
+
+</html>
